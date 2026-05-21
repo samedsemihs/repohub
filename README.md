@@ -10,7 +10,7 @@
 
 ---
 
-RepoHub, GitHub'daki en popüler repoları kategorilere ayırarak keşfetmenizi sağlayan bir web sitesidir. Sade ve koyu temalı arayüzüyle ihtiyacınız olan projeyi hızla bulmanız hedeflenmiştir.
+RepoHub, GitHub'daki en popüler repoları kategorilere ayırarak keşfetmenizi sağlayan bir web sitesidir. Sade arayüzüyle ihtiyacınız olan projeyi hızla bulmanız hedeflenmiştir.
 
 ## Kategoriler
 
@@ -30,15 +30,11 @@ Her kategoride GitHub'da en çok yıldız alan repo'lar listelenir. Veri 3 saatt
 
 ## Kullanım
 
-Siteye Tailscale üzerinden erişilir:
+Siteye Tailscale üzerinden (şimdilik) erişilir:
 
 ```
 http://fun-serv.tailf46897.ts.net/repohub/
 ```
-
-Ana sayfa (`/`) otomatik olarak `/repohub/`'a yönlendirir. Gelecekte ek siteler `/sitesadi/` şeklinde path alır.
-
-Soldaki kategorilerden birine tıklayarak ilgili repoları görebilir, her repo için GitHub sayfasına doğrudan bağlantıya ulaşabilirsiniz. Chart.js grafikleriyle dillerin dağılımı ve repo istatistikleri görselleştirilir.
 
 ## Teknik Altyapı
 
