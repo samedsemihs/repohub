@@ -1,0 +1,12 @@
+# RepoHub — self-hosted site reverse proxy
+# http://fun-serv.tailf46897.ts.net/repohub/
+
+:80 {
+    # Handle /repohub/* → localhost:8080 (strip prefix)
+    handle_path /repohub/* {
+        reverse_proxy localhost:8080
+    }
+
+    # Root redirect → /repohub/
+    redir / /repohub/ 302
+}

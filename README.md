@@ -33,8 +33,10 @@ Her kategoride GitHub'da en çok yıldız alan repo'lar listelenir. Veri 3 saatt
 Siteye Tailscale üzerinden erişilir:
 
 ```
-http://fun-serv:8080
+http://fun-serv.tailf46897.ts.net/repohub/
 ```
+
+Ana sayfa (`/`) otomatik olarak `/repohub/`'a yönlendirir. Gelecekte ek siteler `/sitesadi/` şeklinde path alır.
 
 Soldaki kategorilerden birine tıklayarak ilgili repoları görebilir, her repo için GitHub sayfasına doğrudan bağlantıya ulaşabilirsiniz. Chart.js grafikleriyle dillerin dağılımı ve repo istatistikleri görselleştirilir.
 
