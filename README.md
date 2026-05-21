@@ -1,182 +1,57 @@
 <div align="center">
-  <h1>
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="32" style="vertical-align: middle; margin-right: 8px;" alt=""/>
-    RepoHub
-  </h1>
-  <p><strong>Discover top GitHub repositories, organized by category. <br/>Dark-themed, dynamic, and always fresh.</strong></p>
+  <h1>RepoHub</h1>
+  <p><strong>Discover top GitHub repositories, organized by category.</strong></p>
   <p>
     <img src="https://img.shields.io/badge/repos-405+-brightgreen" alt="405+ repos"/>
     <img src="https://img.shields.io/badge/categories-9-blue" alt="9 categories"/>
-    <img src="https://img.shields.io/badge/data-SQLite%20%2B%20JSON-orange" alt="SQLite + JSON"/>
-    <img src="https://img.shields.io/badge/frontend-Chart.js-ff6384" alt="Chart.js"/>
-    <img src="https://img.shields.io/github/actions/workflow/status/samedsemihs/repohub/ci.yml?label=CI" alt="CI"/>
+    <img src="https://img.shields.io/badge/style-dark-6c5ce7" alt="Dark theme"/>
   </p>
 </div>
 
 ---
 
-## Overview
+RepoHub, GitHub'daki en popüler repoları kategorilere ayırarak keşfetmenizi sağlayan bir web sitesidir. Sade ve koyu temalı arayüzüyle ihtiyacınız olan projeyi hızla bulmanız hedeflenmiştir.
 
-RepoHub is a self-hosted GitHub repository explorer that discovers **the most-starred repositories** across 9 major categories using the GitHub Search API. The data updates automatically every 3 hours via a cron-driven pipeline.
+## Kategoriler
 
-### 🌟 Live Demo
+| Kategori | Odağı |
+|----------|-------|
+| **LLM & Language** | Büyük dil modelleri, NLP, transformerlar |
+| **Computer Vision** | Nesne tespiti, görüntü işleme, üretim |
+| **Audio & Speech** | Metin-konuşma, ses tanıma |
+| **Dev Tools** | CLI araçları, geliştirici araçları |
+| **Frameworks** | Derin öğrenme, makine öğrenmesi çatıları |
+| **MLOps & Infra** | DevOps, monitoring, Kubernetes |
+| **Web Dev** | React, Vue, frontend |
+| **Databases** | SQL, NoSQL, veri depoları |
+| **Creative & Design** | Tasarım sistemleri, görselleştirme, yaratıcı kodlama |
 
-Accessible on the local network via Tailscale:
+Her kategoride GitHub'da en çok yıldız alan repo'lar listelenir. Veri 3 saatte bir yenilenir.
 
-```
-http://repohub-server:8080
-```
+## Kullanım
 
-Or browse the source on GitHub: [samedsemihs/repohub](https://github.com/samedsemihs/repohub)
-
----
-
-## Categories
-
-| # | Category | Icon | Focus |
-|---|----------|------|-------|
-| 1 | **LLM & Language** | 🤖 | Large language models, NLP, transformers |
-| 2 | **Computer Vision** | 👁️ | Object detection, image generation, CV |
-| 3 | **Audio & Speech** | 🎵 | TTS, ASR, audio processing |
-| 4 | **Dev Tools** | 🛠️ | CLI tools, developer tooling, terminal apps |
-| 5 | **Frameworks** | 🧩 | Deep learning, ML, neural networks |
-| 6 | **MLOps & Infra** | ⚡ | DevOps, monitoring, Kubernetes |
-| 7 | **Web Dev** | 🌐 | React, Vue, frontend, CSS |
-| 8 | **Databases** | 🗄️ | SQL, NoSQL, data stores |
-| 9 | **Creative & Design** | 🎨 | Design systems, visualization, creative coding |
-
-Each category searches GitHub with **3–4 curated queries**, pulling **12–15 repos per query**. Duplicates are deduplicated in the database. Only repos with **1,000+ stars** appear in the final output.
-
----
-
-## 🏗 Architecture
+Siteye Tailscale üzerinden erişilir:
 
 ```
-┌──────────────┐     ┌─────────────────────┐     ┌──────────────────┐
-│  GitHub      │     │  fetch_repos.py     │     │  index.html      │
-│  Search API  │────▶│  (cron: every 3h)   │────▶│  (static site)   │
-│  (REST v3)   │     │                     │     │                  │
-└──────────────┘     │  ┌───────────────┐  │     │  Chart.js        │
-                     │  │   repohub.db  │  │     │  Dark theme      │
-                     │  │   (SQLite)    │  │     │  Responsive      │
-                     │  └───────┬───────┘  │     └──────────────────┘
-                     │          │          │
-                     │  ┌───────▼───────┐  │
-                     │  │ repodata.json │  │
-                     │  │ (static JSON) │  │
-                     │  └───────────────┘  │
-                     └─────────────────────┘
+http://repohub:8080
 ```
 
-### Data Pipeline
+Soldaki kategorilerden birine tıklayarak ilgili repoları görebilir, her repo için GitHub sayfasına doğrudan bağlantıya ulaşabilirsiniz. Chart.js grafikleriyle dillerin dağılımı ve repo istatistikleri görselleştirilir.
 
-1. **`fetch_repos.py`** runs every 3 hours via systemd timer
-2. Each run picks **1 category** to refresh (round-robin across 9)
-3. Queries the **GitHub Search API** with category-specific queries
-4. Stores results in **SQLite** (`repohub.db`) with deduplication
-5. Exports to **`repodata.json`** — the static file the frontend reads
-6. Full cycle completes in **~27 hours**
+## Teknik Altyapı
 
-### Frontend
-
-- **Single-file static HTML** — no build step, no framework
-- **Chart.js** for visualizations (language distribution, star trends)
-- **Geist font** by Vercel
-- **Dark theme** with purple accent palette
-- Fully responsive, mobile-friendly
-
----
-
-## 🚀 Quick Start
-
-```bash
-# 1. Clone
-git clone https://github.com/samedsemihs/repohub.git
-cd repohub
-
-# 2. Set your GitHub token (required for API access)
-export GITHUB_TOKEN="ghp_your_token_here"
-
-# 3. Run the data fetcher
-python3 fetch_repos.py
-
-# 4. Serve the site
-python3 -m http.server 8080
-
-# → Open http://localhost:8080
-```
-
-### Configuration
-
-Edit `fetch_repos.py` to customize:
-
-- **Categories**: Add/remove entries in the `CATEGORIES` list
-- **Star thresholds**: Change `MIN_STARS_EXPORT` (default: 1000)
-- **Refresh rate**: Adjust the cron schedule in `repohub-fetch.timer`
-
----
-
-## 📊 Data
-
-405 repos across 9 categories, storing for each repo:
-
-| Field | Description |
-|-------|-------------|
-| `name` | Repository name |
-| `owner` | Owner (user or organization) |
-| `description` | Project description |
-| `stars` | Star count |
-| `forks` | Fork count |
-| `language` | Primary programming language |
-| `topics` | GitHub topics |
-| `license` | License type |
-| `html_url` | GitHub URL |
-
----
-
-## ⚙️ CI/CD
-
-| Stage | System | What it does |
-|-------|--------|-------------|
-| **CI** | GitHub Actions (`.github/workflows/ci.yml`) | Validates Python syntax, JSON structure, HTML integrity on every push/PR |
-| **Data refresh** | systemd timer (`repohub-fetch.timer`) | Runs `fetch_repos.py` every 3 hours |
-| **Auto-deploy** | systemd timer (`repohub-deploy.timer`) | Polls GitHub every 2 minutes, pulls on new commits |
-
-### Self-Hosted Deployment
-
-```bash
-# Systemd services (for Linux servers)
-cp repohub-web.service repohub-webhook.service repohub-deploy.* ~/.config/systemd/user/
-systemctl --user daemon-reload
-systemctl --user enable --now repohub-web.service repohub-deploy.timer
-```
-
-> ⚠️ Server-specific files (deploy scripts, webhook receiver) are kept local — they are not pushed to this public repository.
-
----
-
-## 🛠 Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| **Backend** | Python 3 — `urllib`, `sqlite3` |
-| **Database** | SQLite (WAL mode) |
-| **Frontend** | Vanilla HTML/CSS/JS |
-| **Visualization** | Chart.js 4 |
-| **Font** | Geist (Vercel) |
-| **API** | GitHub REST API v3 |
-| **Serving** | Python `http.server` / systemd |
-| **CI** | GitHub Actions |
-| **CD** | systemd timer + deploy hook |
-
----
-
-## 📄 License
-
-MIT — feel free to fork, modify, and use.
+| Bileşen | Açıklama |
+|---------|----------|
+| **Backend** | Python — GitHub Search API entegrasyonu |
+| **Depolama** | SQLite (WAL modu) |
+| **Frontend** | Vanilla HTML/CSS/JS, Chart.js, Geist font |
+| **Güncelleme** | 3 saatte bir otomatik (systemd timer) |
+| **Barındırma** | Self-hosted, Tailscale üzerinden erişim |
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ and a lot of API calls.</sub>
+  <sub>
+    <a href="https://github.com/samedsemihs/repohub">GitHub</a>
+  </sub>
 </div>
