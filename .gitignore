@@ -18,3 +18,7 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Server-specific (paths, secrets) — local only
+deploy.sh
+webhook_receiver.py
