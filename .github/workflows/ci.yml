@@ -24,20 +24,19 @@ jobs:
           import json
           with open('repodata.json') as f:
               data = json.load(f)
-          assert 'categories' in data, 'Missing categories key'
+          assert 'fetched_at' in data, 'Missing fetched_at key'
           assert 'repos' in data, 'Missing repos key'
-          assert 'last_updated' in data, 'Missing last_updated key'
-          assert 'stats' in data, 'Missing stats key'
-          cats = data['categories']
+          assert 'total' in data, 'Missing total key'
+          assert 'total_categories' in data, 'Missing total_categories key'
           repos = data['repos']
-          print(f'✓ {len(cats)} categories: {[c[\"name\"] for c in cats]}')
-          print(f'✓ {len(repos)} repos loaded')
+          print(f'✓ {data[\"total_categories\"]} categories, {data[\"total\"]} repos')
+          print(f'✓ Last fetched: {data[\"fetched_at\"]}')
           # Validate each repo has required fields
           for r in repos:
               assert 'name' in r, f'Repo missing name: {r}'
-              assert 'url' in r, f'Repo missing url: {r.get(\"name\",\"?\")}'
-              assert 'stars' in r or 'stargazers_count' in r, f'Repo missing stars: {r.get(\"name\",\"?\")}'
-          print(f'✓ All repo records valid')
+              assert 'html_url' in r, f'Repo missing html_url: {r.get(\"name\",\"?\")}'
+              assert 'stars' in r, f'Repo missing stars: {r.get(\"name\",\"?\")}'
+          print(f'✓ All {len(repos)} repo records valid')
           "
 
       - name: HTML structure check
