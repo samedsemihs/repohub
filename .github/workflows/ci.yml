@@ -1,0 +1,63 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python syntax check
+        run: |
+          python3 -m py_compile fetch_repos.py
+          echo "✓ Python syntax OK"
+
+      - name: Validate JSON structure
+        run: |
+          python3 -c "
+          import json
+          with open('repodata.json') as f:
+              data = json.load(f)
+          assert 'categories' in data, 'Missing categories key'
+          assert 'repos' in data, 'Missing repos key'
+          assert 'last_updated' in data, 'Missing last_updated key'
+          assert 'stats' in data, 'Missing stats key'
+          cats = data['categories']
+          repos = data['repos']
+          print(f'✓ {len(cats)} categories: {[c[\"name\"] for c in cats]}')
+          print(f'✓ {len(repos)} repos loaded')
+          # Validate each repo has required fields
+          for r in repos:
+              assert 'name' in r, f'Repo missing name: {r}'
+              assert 'url' in r, f'Repo missing url: {r.get(\"name\",\"?\")}'
+              assert 'stars' in r or 'stargazers_count' in r, f'Repo missing stars: {r.get(\"name\",\"?\")}'
+          print(f'✓ All repo records valid')
+          "
+
+      - name: HTML structure check
+        run: |
+          python3 -c "
+          with open('index.html') as f:
+              html = f.read()
+          assert '<!DOCTYPE html>' in html, 'Missing DOCTYPE'
+          assert '</html>' in html, 'Missing closing html'
+          assert 'chart.js' in html.lower() or 'Chart' in html, 'Missing Chart.js reference'
+          print(f'✓ HTML file valid ({len(html)} bytes)')
+          "
+
+      - name: Check .gitignore
+        run: |
+          python3 -c "
+          with open('.gitignore') as f:
+              content = f.read()
+          required = ['repohub.db', 'fetch.log', '.env']
+          for r in required:
+              assert r in content, f'.gitignore missing: {r}'
+          print(f'✓ .gitignore covers {len(content.split(chr(10)))} entries')
+          "
