@@ -33,7 +33,7 @@ Her kategoride GitHub'da en çok yıldız alan repo'lar listelenir. Veri 3 saatt
 Siteye Tailscale üzerinden erişilir:
 
 ```
-http://ssslocalaiserver.tailf46897.ts.net:8080
+http://fun-serv:8080
 ```
 
 Soldaki kategorilerden birine tıklayarak ilgili repoları görebilir, her repo için GitHub sayfasına doğrudan bağlantıya ulaşabilirsiniz. Chart.js grafikleriyle dillerin dağılımı ve repo istatistikleri görselleştirilir.
