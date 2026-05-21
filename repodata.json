@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-21T09:48:29.688355+00:00",
+  "fetched_at": "2026-05-21T12:00:43.987610+00:00",
   "total": 405,
   "total_categories": 9,
   "repos": [
@@ -664,8 +664,8 @@
       "full_name": "AUTOMATIC1111/stable-diffusion-webui",
       "owner": "AUTOMATIC1111",
       "description": "Stable Diffusion web UI",
-      "stars": 163185,
-      "forks": 30347,
+      "stars": 163190,
+      "forks": 30348,
       "open_issues": 2486,
       "language": "Python",
       "topics": [
@@ -686,12 +686,12 @@
         "upscaling",
         "web"
       ],
-      "category": "frameworks",
+      "category": "vision",
       "html_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "updated_at": "2026-05-21T09:23:52Z",
+      "updated_at": "2026-05-21T11:41:27Z",
       "pushed_at": "2026-03-02T07:00:53Z",
       "license": "AGPL-3.0",
-      "watchers": 163185,
+      "watchers": 163190,
       "size": 36552,
       "contributors": [
         {
@@ -2521,9 +2521,9 @@
       "full_name": "opencv/opencv",
       "owner": "opencv",
       "description": "Open Source Computer Vision Library",
-      "stars": 87582,
+      "stars": 87583,
       "forks": 56579,
-      "open_issues": 2743,
+      "open_issues": 2736,
       "language": "C++",
       "topics": [
         "c-plus-plus",
@@ -2532,13 +2532,13 @@
         "image-processing",
         "opencv"
       ],
-      "category": "frameworks",
+      "category": "vision",
       "html_url": "https://github.com/opencv/opencv",
-      "updated_at": "2026-05-21T06:28:27Z",
-      "pushed_at": "2026-05-21T06:30:02Z",
+      "updated_at": "2026-05-21T11:30:05Z",
+      "pushed_at": "2026-05-21T11:30:03Z",
       "license": "Apache-2.0",
-      "watchers": 87582,
-      "size": 557825,
+      "watchers": 87583,
+      "size": 558334,
       "contributors": [
         {
           "login": "alalek",
@@ -2548,7 +2548,7 @@
         {
           "login": "asmorkalov",
           "avatar": "https://avatars.githubusercontent.com/u/2536374?v=4",
-          "contributions": 2391
+          "contributions": 2394
         },
         {
           "login": "vpisarev",
@@ -2956,7 +2956,7 @@
       "full_name": "Developer-Y/cs-video-courses",
       "owner": "Developer-Y",
       "description": "List of Computer Science courses with video lectures.",
-      "stars": 81478,
+      "stars": 81482,
       "forks": 11262,
       "open_issues": 4,
       "language": null,
@@ -2980,12 +2980,12 @@
         "systems",
         "web-development"
       ],
-      "category": "frameworks",
+      "category": "vision",
       "html_url": "https://github.com/Developer-Y/cs-video-courses",
-      "updated_at": "2026-05-21T09:31:46Z",
+      "updated_at": "2026-05-21T11:20:36Z",
       "pushed_at": "2026-05-10T19:22:40Z",
       "license": null,
-      "watchers": 81478,
+      "watchers": 81482,
       "size": 957,
       "contributors": [
         {
@@ -3469,7 +3469,7 @@
       "full_name": "d2l-ai/d2l-zh",
       "owner": "d2l-ai",
       "description": "《动手学深度学习》：面向中文读者、能运行、可讨论。中英文版被70多个国家的500多所大学用于教学。",
-      "stars": 77927,
+      "stars": 77929,
       "forks": 12295,
       "open_issues": 129,
       "language": "Python",
@@ -3483,12 +3483,12 @@
         "notebook",
         "python"
       ],
-      "category": "frameworks",
+      "category": "vision",
       "html_url": "https://github.com/d2l-ai/d2l-zh",
-      "updated_at": "2026-05-21T07:55:13Z",
+      "updated_at": "2026-05-21T12:00:00Z",
       "pushed_at": "2024-07-30T09:32:19Z",
       "license": "Apache-2.0",
-      "watchers": 77927,
+      "watchers": 77929,
       "size": 316965,
       "contributors": [
         {
@@ -5802,8 +5802,8 @@
       "full_name": "ultralytics/yolov5",
       "owner": "ultralytics",
       "description": "YOLOv5 🚀 in PyTorch > ONNX > CoreML > TFLite",
-      "stars": 57410,
-      "forks": 17471,
+      "stars": 57412,
+      "forks": 17470,
       "open_issues": 42,
       "language": "Python",
       "topics": [
@@ -5821,12 +5821,12 @@
         "yolov3",
         "yolov5"
       ],
-      "category": "frameworks",
+      "category": "vision",
       "html_url": "https://github.com/ultralytics/yolov5",
-      "updated_at": "2026-05-21T09:13:10Z",
+      "updated_at": "2026-05-21T10:54:26Z",
       "pushed_at": "2026-05-06T16:05:11Z",
       "license": "AGPL-3.0",
-      "watchers": 57410,
+      "watchers": 57412,
       "size": 17468,
       "contributors": [
         {
@@ -5854,7 +5854,7 @@
       "full_name": "ultralytics/ultralytics",
       "owner": "ultralytics",
       "description": "Ultralytics YOLO 🚀",
-      "stars": 57394,
+      "stars": 57399,
       "forks": 11030,
       "open_issues": 311,
       "language": "Python",
@@ -5880,18 +5880,18 @@
         "yolo26",
         "yolov8"
       ],
-      "category": "frameworks",
+      "category": "vision",
       "html_url": "https://github.com/ultralytics/ultralytics",
-      "updated_at": "2026-05-21T09:02:02Z",
-      "pushed_at": "2026-05-21T09:36:00Z",
+      "updated_at": "2026-05-21T11:50:51Z",
+      "pushed_at": "2026-05-21T10:10:55Z",
       "license": "AGPL-3.0",
-      "watchers": 57394,
-      "size": 55247,
+      "watchers": 57399,
+      "size": 55204,
       "contributors": [
         {
           "login": "glenn-jocher",
           "avatar": "https://avatars.githubusercontent.com/u/26833433?v=4",
-          "contributions": 1578
+          "contributions": 1579
         },
         {
           "login": "RizwanMunawar",
@@ -7249,8 +7249,8 @@
       "full_name": "microsoft/AI-For-Beginners",
       "owner": "microsoft",
       "description": "12 Weeks, 24 Lessons, AI for All!",
-      "stars": 47680,
-      "forks": 9854,
+      "stars": 47684,
+      "forks": 9852,
       "open_issues": 5,
       "language": "Jupyter Notebook",
       "topics": [
@@ -7265,12 +7265,12 @@
         "nlp",
         "rnn"
       ],
-      "category": "llm",
+      "category": "vision",
       "html_url": "https://github.com/microsoft/AI-For-Beginners",
-      "updated_at": "2026-05-21T09:00:50Z",
+      "updated_at": "2026-05-21T11:59:01Z",
       "pushed_at": "2026-05-09T00:28:43Z",
       "license": "MIT",
-      "watchers": 47680,
+      "watchers": 47684,
       "size": 1416835,
       "contributors": [
         {
@@ -7715,9 +7715,9 @@
       "full_name": "mudler/LocalAI",
       "owner": "mudler",
       "description": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
-      "stars": 46383,
+      "stars": 46384,
       "forks": 4090,
-      "open_issues": 163,
+      "open_issues": 161,
       "language": "Go",
       "topics": [
         "agents",
@@ -7741,11 +7741,11 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/mudler/LocalAI",
-      "updated_at": "2026-05-21T09:41:02Z",
-      "pushed_at": "2026-05-21T09:08:55Z",
+      "updated_at": "2026-05-21T11:58:51Z",
+      "pushed_at": "2026-05-21T11:10:46Z",
       "license": "MIT",
-      "watchers": 46383,
-      "size": 60367,
+      "watchers": 46384,
+      "size": 59993,
       "contributors": [
         {
           "login": "mudler",
@@ -7755,7 +7755,7 @@
         {
           "login": "localai-bot",
           "avatar": "https://avatars.githubusercontent.com/u/139863280?v=4",
-          "contributions": 1550
+          "contributions": 1551
         },
         {
           "login": "dependabot[bot]",
@@ -9609,7 +9609,7 @@
       "full_name": "roboflow/supervision",
       "owner": "roboflow",
       "description": "We write your reusable computer vision tools. 💜",
-      "stars": 39354,
+      "stars": 39371,
       "forks": 3521,
       "open_issues": 104,
       "language": "Python",
@@ -9636,11 +9636,11 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/roboflow/supervision",
-      "updated_at": "2026-05-21T09:41:59Z",
-      "pushed_at": "2026-05-21T09:39:50Z",
+      "updated_at": "2026-05-21T11:57:17Z",
+      "pushed_at": "2026-05-21T09:52:17Z",
       "license": "MIT",
-      "watchers": 39354,
-      "size": 3422552,
+      "watchers": 39371,
+      "size": 3422628,
       "contributors": [
         {
           "login": "SkalskiP",
@@ -11348,7 +11348,7 @@
       "full_name": "khoj-ai/khoj",
       "owner": "khoj-ai",
       "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
-      "stars": 34641,
+      "stars": 34644,
       "forks": 2204,
       "open_issues": 100,
       "language": "Python",
@@ -11376,10 +11376,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/khoj-ai/khoj",
-      "updated_at": "2026-05-21T09:11:54Z",
+      "updated_at": "2026-05-21T11:56:17Z",
       "pushed_at": "2026-03-26T03:35:43Z",
       "license": "AGPL-3.0",
-      "watchers": 34641,
+      "watchers": 34644,
       "size": 117335,
       "contributors": [
         {
@@ -11669,7 +11669,7 @@
       "full_name": "ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
       "owner": "ashishpatel26",
       "description": "500 AI Machine learning Deep learning Computer vision NLP Projects with code",
-      "stars": 33730,
+      "stars": 33734,
       "forks": 7167,
       "open_issues": 64,
       "language": null,
@@ -11688,12 +11688,12 @@
         "nlp-projects",
         "python"
       ],
-      "category": "llm",
+      "category": "vision",
       "html_url": "https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code",
-      "updated_at": "2026-05-21T09:47:17Z",
+      "updated_at": "2026-05-21T11:39:38Z",
       "pushed_at": "2025-08-01T11:54:09Z",
       "license": null,
-      "watchers": 33730,
+      "watchers": 33734,
       "size": 879,
       "contributors": [
         {
@@ -11768,9 +11768,9 @@
       "full_name": "huggingface/diffusers",
       "owner": "huggingface",
       "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch.",
-      "stars": 33677,
-      "forks": 6989,
-      "open_issues": 1132,
+      "stars": 33678,
+      "forks": 6991,
+      "open_issues": 1133,
       "language": "Python",
       "topics": [
         "deep-learning",
@@ -11791,11 +11791,11 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/huggingface/diffusers",
-      "updated_at": "2026-05-21T09:41:07Z",
-      "pushed_at": "2026-05-21T09:19:08Z",
+      "updated_at": "2026-05-21T11:03:26Z",
+      "pushed_at": "2026-05-21T11:31:25Z",
       "license": "Apache-2.0",
-      "watchers": 33677,
-      "size": 99174,
+      "watchers": 33678,
+      "size": 99186,
       "contributors": [
         {
           "login": "patrickvonplaten",
@@ -12271,7 +12271,7 @@
       "full_name": "blakeblackshear/frigate",
       "owner": "blakeblackshear",
       "description": "NVR with realtime local object detection for IP cameras",
-      "stars": 32049,
+      "stars": 32047,
       "forks": 3103,
       "open_issues": 128,
       "language": "TypeScript",
@@ -12291,10 +12291,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/blakeblackshear/frigate",
-      "updated_at": "2026-05-21T05:52:54Z",
-      "pushed_at": "2026-05-21T02:13:59Z",
+      "updated_at": "2026-05-21T10:53:32Z",
+      "pushed_at": "2026-05-21T11:04:46Z",
       "license": "MIT",
-      "watchers": 32049,
+      "watchers": 32047,
       "size": 122808,
       "contributors": [
         {
@@ -12947,8 +12947,8 @@
       "full_name": "eugeneyan/applied-ml",
       "owner": "eugeneyan",
       "description": "📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production.",
-      "stars": 29215,
-      "forks": 3883,
+      "stars": 29229,
+      "forks": 3887,
       "open_issues": 6,
       "language": null,
       "topics": [
@@ -12969,10 +12969,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/eugeneyan/applied-ml",
-      "updated_at": "2026-05-21T09:28:49Z",
+      "updated_at": "2026-05-21T11:37:38Z",
       "pushed_at": "2024-07-18T22:41:02Z",
       "license": "MIT",
-      "watchers": 29215,
+      "watchers": 29229,
       "size": 397,
       "contributors": [
         {
@@ -13423,7 +13423,7 @@
       "full_name": "HumanSignal/label-studio",
       "owner": "HumanSignal",
       "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format",
-      "stars": 27367,
+      "stars": 27369,
       "forks": 3536,
       "open_issues": 886,
       "language": "TypeScript",
@@ -13451,10 +13451,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/HumanSignal/label-studio",
-      "updated_at": "2026-05-21T07:19:10Z",
+      "updated_at": "2026-05-21T11:54:03Z",
       "pushed_at": "2026-05-21T07:19:01Z",
       "license": "Apache-2.0",
-      "watchers": 27367,
+      "watchers": 27369,
       "size": 3010807,
       "contributors": [
         {
@@ -14983,7 +14983,7 @@
       "full_name": "amusi/CVPR2026-Papers-with-Code",
       "owner": "amusi",
       "description": "CVPR 2026 论文和开源项目合集",
-      "stars": 22583,
+      "stars": 22585,
       "forks": 2789,
       "open_issues": 27,
       "language": null,
@@ -15011,10 +15011,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/amusi/CVPR2026-Papers-with-Code",
-      "updated_at": "2026-05-21T09:33:45Z",
+      "updated_at": "2026-05-21T11:57:36Z",
       "pushed_at": "2026-03-08T07:27:34Z",
       "license": null,
-      "watchers": 22583,
+      "watchers": 22585,
       "size": 473,
       "contributors": [
         {
@@ -16289,8 +16289,8 @@
       "full_name": "AIDC-AI/Pixelle-Video",
       "owner": "AIDC-AI",
       "description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
-      "stars": 18859,
-      "forks": 2687,
+      "stars": 18890,
+      "forks": 2689,
       "open_issues": 101,
       "language": "Python",
       "topics": [
@@ -16302,10 +16302,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/AIDC-AI/Pixelle-Video",
-      "updated_at": "2026-05-21T09:38:24Z",
+      "updated_at": "2026-05-21T11:55:11Z",
       "pushed_at": "2026-05-18T07:13:46Z",
       "license": "Apache-2.0",
-      "watchers": 18859,
+      "watchers": 18890,
       "size": 28647,
       "contributors": [
         {
@@ -16980,7 +16980,7 @@
       "full_name": "microsoft/Swin-Transformer",
       "owner": "microsoft",
       "description": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\".",
-      "stars": 15930,
+      "stars": 15931,
       "forks": 2221,
       "open_issues": 204,
       "language": "Python",
@@ -16996,10 +16996,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/microsoft/Swin-Transformer",
-      "updated_at": "2026-05-21T06:06:03Z",
+      "updated_at": "2026-05-21T10:21:21Z",
       "pushed_at": "2024-07-24T17:09:57Z",
       "license": "MIT",
-      "watchers": 15930,
+      "watchers": 15931,
       "size": 1099,
       "contributors": [
         {
@@ -17027,8 +17027,8 @@
       "full_name": "cvat-ai/cvat",
       "owner": "cvat-ai",
       "description": "Computer Vision Annotation Tool (CVAT) is a leading platform for building high-quality visual datasets for vision AI. It offers open-source, cloud, and enterprise products, as well as labeling services, for image, video, and 3D annotation with AI-assisted labeling, quality assurance, team collaboration, analytics, and developer APIs.",
-      "stars": 15879,
-      "forks": 3685,
+      "stars": 15880,
+      "forks": 3686,
       "open_issues": 595,
       "language": "Python",
       "topics": [
@@ -17055,11 +17055,11 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/cvat-ai/cvat",
-      "updated_at": "2026-05-21T08:50:20Z",
-      "pushed_at": "2026-05-21T09:25:39Z",
+      "updated_at": "2026-05-21T11:25:02Z",
+      "pushed_at": "2026-05-21T11:41:58Z",
       "license": "MIT",
-      "watchers": 15879,
-      "size": 361733,
+      "watchers": 15880,
+      "size": 361807,
       "contributors": [
         {
           "login": "bsekachev",
@@ -17345,36 +17345,38 @@
       "full_name": "EvoLinkAI/awesome-gpt-image-2-API-and-Prompts",
       "owner": "EvoLinkAI",
       "description": "GPT-Image-2 API and Prompts",
-      "stars": 15171,
-      "forks": 1530,
+      "stars": 15175,
+      "forks": 1533,
       "open_issues": 4,
       "language": "Python",
       "topics": [
+        "ai-art",
         "api",
         "awesome-list",
         "awesome-lists",
         "chatgpt",
-        "generative-",
+        "creative-tools",
+        "generative-ai",
         "gpt-image-2",
         "gpt-image-2-api",
         "gpt-image-2-prompts",
         "gptimage2",
         "image-generation",
+        "image-models",
         "image-prompt",
         "image-to-image",
         "openai",
-        "openrouter-alternative",
-        "prompt-",
         "prompt-collection",
-        "prompts",
-        "text-to-image"
+        "prompt-engineering",
+        "text-to-image",
+        "visual-ai"
       ],
       "category": "vision",
       "html_url": "https://github.com/EvoLinkAI/awesome-gpt-image-2-API-and-Prompts",
-      "updated_at": "2026-05-21T09:31:28Z",
+      "updated_at": "2026-05-21T11:22:47Z",
       "pushed_at": "2026-05-20T05:54:36Z",
       "license": "CC0-1.0",
-      "watchers": 15171,
+      "watchers": 15175,
       "size": 150177,
       "contributors": [
         {
@@ -18083,7 +18085,7 @@
       "owner": "jacobgil",
       "description": "Advanced AI Explainability for computer vision.  Support for CNNs, Vision Transformers, Classification, Object detection, Segmentation, Image similarity and more.",
       "stars": 12818,
-      "forks": 1705,
+      "forks": 1706,
       "open_issues": 164,
       "language": "Python",
       "topics": [
@@ -18465,7 +18467,7 @@
       "full_name": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "owner": "YouMind-OpenLab",
       "description": "🍌 World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview images, 16 languages. Google Gemini AI image generation. Free & open source.",
-      "stars": 12141,
+      "stars": 12140,
       "forks": 1314,
       "open_issues": 0,
       "language": "TypeScript",
@@ -18489,11 +18491,11 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
-      "updated_at": "2026-05-21T09:13:51Z",
+      "updated_at": "2026-05-21T10:53:44Z",
       "pushed_at": "2026-05-21T09:03:35Z",
       "license": "NOASSERTION",
-      "watchers": 12141,
-      "size": 309118,
+      "watchers": 12140,
+      "size": 309420,
       "contributors": [
         {
           "login": "github-actions[bot]",
@@ -18683,8 +18685,8 @@
       "full_name": "op7418/guizang-ppt-skill",
       "owner": "op7418",
       "description": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.",
-      "stars": 10847,
-      "forks": 859,
+      "stars": 10879,
+      "forks": 861,
       "open_issues": 11,
       "language": "HTML",
       "topics": [
@@ -18702,10 +18704,10 @@
       ],
       "category": "vision",
       "html_url": "https://github.com/op7418/guizang-ppt-skill",
-      "updated_at": "2026-05-21T09:37:00Z",
+      "updated_at": "2026-05-21T11:57:13Z",
       "pushed_at": "2026-05-19T15:29:10Z",
       "license": "MIT",
-      "watchers": 10847,
+      "watchers": 10879,
       "size": 1909,
       "contributors": [
         {
