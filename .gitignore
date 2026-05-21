@@ -1,0 +1,20 @@
+# Database
+repohub.db
+
+# Logs
+fetch.log
+*.log
+
+# Environment / Secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
